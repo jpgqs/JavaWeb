@@ -1,0 +1,152 @@
+.single {
+padding: 5em 0 0;
+}
+.container {
+width: 1170px;
+}
+.single-top {
+height: 360px;
+margin: 0 0 5em;
+box-shadow: 1px -1px 11px -2px rgba(80, 57, 58, 0.55);
+padding: 2em 0.5em;
+}
+
+.single h3 a{
+  font-size: 30px;
+  color: #A5A7A3;
+  margin: 0;
+  font-weight: 500;
+  text-decoration:none;
+  font-family: 'Montserrat', sans-serif;
+}
+.single h3 a:hover{
+	color:#6cbc35;
+}
+.single p {
+  font-size:16px;
+  color: #A0A0A0;
+  line-height: 1.8em;
+  margin: 1em 0;
+}
+.single h5 {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    margin: 1em 0;
+    color: #553a99;
+}
+.single h6 {
+    font-size: 18px;
+    color: #fff;
+    background: #6cbc35;
+    padding: 0.5em 1em;
+    width: 66%;
+}
+.single h3{
+}
+.single h5 {
+    line-height: 30px;
+}
+.single-right {
+    margin-bottom: 1em;
+}
+.sinbt {
+  text-align: right;
+  margin: 2em 0 0;
+}
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.col-md-6 {
+width: 50%;
+float: left;
+}
+
+.hvr-shutter-in-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: #6cbc35;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 0.875em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+#_j_adddate{
+	
+    display: inline-block;
+	background: url(../images/sprite_v29.png) -409px -9px no-repeat;
+	height:20px;
+	width:20px;
+}
+.date-wrap .d-add {
+    width: auto;
+    padding: 30px 0 0 0;
+    color: #333;
+    font-size: 12px;
+}
+.date-wrap .d-sub {
+    width: auto;
+    padding: 20px 0 0 0;
+    color: #333;
+    font-size: 30px;
+}
+.hotelpay {
+	text-align: right;
+	display:none;
+}
+.hotelpay .totalcost {
+	color:red;
+	font-size:28px;
+}
+
+<!-- view -->
+.offers {
+padding: 5em 0;
+}
+
+.container {
+width: 1170px;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+.col-md-4 {
+width: 30%;
+float: left;
+min-height: 1px;
+padding-top: 20px;
+padding-right: 15px;
+padding-left: 15px;
+}
+.offers img{
+width: 350px;
+height: 200px;
+}
+.img-r{
+display: block;
+max-width: 100%;
+height: auto;
+overflow: hidden;
+}
+.offers h4 {
+font-size: 1.2em;
+color: #6cbc35;
+line-height: 1.2em;
+margin: 1em 0 0;
+}
+.offers p {
+font-size: 1em;
+color: #A0A0A0;
+line-height: 1.8em;
+margin: 1em 0;
+}

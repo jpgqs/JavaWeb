@@ -1,0 +1,202 @@
+.media-left {
+float: left;
+width: 500px;
+height: 340px;
+}
+.d-wrapper,#media-wrapper {
+	margin:0 auto;
+	margin-top: 30px;
+	margin-bottom: 40px;
+	position: relative;
+	width: 1200px;
+min-height: 292px;
+padding: 20px;
+}
+.d-wrapper,#media-wrapper {
+border: 1px solid #dfdfdf;
+background-color: #fff;
+}
+.media-left img{
+width: 100%;
+height: 280px;
+}
+.media-right {
+float: right;
+width: 610px;
+}
+.media-title {
+width: 400px;
+margin-bottom: 5px;
+font: 30px/36px 'microsoft yahei';
+}
+.media-right ul {
+margin-top: 30px;
+}
+.media-right ul li {
+width: 480px;
+padding-left: 75px;
+margin-bottom: 20px;
+overflow: hidden;
+}
+.media-right .time {
+max-height: 36px;
+word-break: break-all;
+}
+.media-right .promise {
+margin-bottom: 0;
+}
+.media-right .grade {
+position: relative;
+width: 480px;
+height: 40px;
+padding: 15px 0 7px 80px;
+color: #06c;
+}
+.media-right .comment {
+position: relative;
+top:65px;
+width: 510px;
+padding: 0 20px 0 30px;
+word-wrap: break-word;
+}
+.media-right ul li em {
+float: left;
+width: 60px;
+margin-left: -75px;
+font-weight: 700;
+}
+.media-label {
+display: inline-block;
+height: 22px;
+line-height: 22px;
+margin-bottom: 5px;
+padding: 0 8px;
+color: #fff;
+background-color: #6fd199;
+cursor: pointer;
+}
+.jmp {
+z-index: 1;
+width: 260px;
+padding: 10px;
+background: #fff;
+}
+.jmp, .media-right .popup {
+position: absolute;
+border: 1px solid #dbdbdb;
+box-shadow: 3px 3px 5px #dfe1e2;
+}
+.media-right .comment i.head {
+left: 0;
+background-position: -60px -15px;
+}
+.media-right .comment i {
+position: absolute;
+width: 20px;
+height: 20px;
+}
+.media-right .comment i{
+display: inline-block;
+width: 10px;
+height: 16px;
+background-image: url(http://pic.c-ctrip.com/ticketonline/ticket-detail.png?v=3);
+background-repeat: no-repeat;
+}
+.media-right .comment i.tail {
+right: -4px;
+bottom: 20px;
+background-position: -86px -15px;
+}
+.media-right .comment i {
+position: absolute;
+width: 20px;
+height: 20px;
+}
+.media-right .comment i{
+display: inline-block;
+width: 10px;
+height: 16px;
+background-image: url(http://pic.c-ctrip.com/ticketonline/ticket-detail.png?v=3);
+background-repeat: no-repeat;
+}
+.media-price {
+position: absolute;
+right: -9px;
+top: 50px;
+width: 165px;
+height: 70px;
+background: #ff9a00;
+color: #fff;
+text-align: left;
+}
+.media-price a{
+	color: #fff;
+}
+.media-price a:hover{
+	text-decoration: none;
+}
+.media-price i.head {
+position: absolute;
+height: 100%;
+width: 24px;
+left: -24px;
+background-position: -226px -14px;
+}
+.media-price .price-box {
+font-size: 14px;
+padding-top: 4px;
+padding-left: 25px;
+margin-bottom: -4px;
+}
+.media-price i.tail {
+position: absolute;
+right: 0;
+bottom: -9px;
+background-position: -229px 7px;
+}
+.media-price i{
+display: inline-block;
+width: 10px;
+height: 16px;
+background-image: url(http://pic.c-ctrip.com/ticketonline/ticket-detail.png?v=3);
+background-repeat: no-repeat;
+}
+.media-price .price-box dfn {
+font-size: 30px;
+}
+.media-price .price-box span {
+font-size: 30px;
+font-family: Arial;
+margin-left: -5px;
+}
+.c-wrapper-style {
+display: block;
+cursor: default;
+position: absolute;
+height: 41px;
+line-height: 41px;
+top: 0;
+left: -1px;
+}
+.c-wrapper-style i {
+display: block;
+float: left;
+width: 80px;
+height: 41px;
+padding-left: 48px;
+color: #fff;
+font-size: 18px;
+font-style: normal;
+}
+i.detail-icon-1 {
+background-color: #4eb6fb;
+}
+.c-wrapper-info {
+margin-top: 30px;
+}
+.c-wrapper-info dd {
+line-height: 22px;
+}
+strong{
+font-weight: bold;
+}

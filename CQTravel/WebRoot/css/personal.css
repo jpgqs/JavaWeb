@@ -1,0 +1,819 @@
+
+.wrap {
+	padding: 25px 0;
+	font-size: 14px;
+	color: #666;
+}
+.aside {
+    width: 220px;
+    float: left;
+}
+.aside a.on {
+    background-color: #ffa800;
+    color: #fff;
+}
+.aside a {
+    display: block;
+    line-height: 46px;
+    font-size: 14px;
+    color: #666;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+}
+.aside a:hover {
+    text-decoration: none;
+}
+.aside i {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background: url(../images/i_left4.png) no-repeat;
+    margin: 0 10px 0 24px;
+    vertical-align: middle;
+}
+.aside .i1 {
+    background-position: 0 0;
+}
+.aside a.on .i1 {
+    background-position: -22px 0;
+}
+.aside .i2 {
+    background-position: 0 -22px;
+}
+.aside a.on .i2 {
+    background-position: -22px -22px;
+}
+.aside .i3 {
+    background-position: 0 -44px;
+}
+.aside a.on .i3 {
+    background-position: -22px -44px;
+}
+.aside .i4 {
+    background-position: 0 -66px;
+}
+.aside a.on .i4 {
+    background-position: -22px -66px;
+}
+.aside .i8 {
+    background-position: 0 -154px;
+}
+.aside a.on .i8 {
+    background-position: -22px -154px;
+}
+.aside .i9 {
+    background-position: 0 -176px;
+}
+.aside a.on .i9 {
+    background-position: -22px -176px;
+}
+.aside .i10 {
+    background-position: 0 -198px;
+}
+.aside a.on .i10 {
+    background-position: -22px -198px;
+}
+
+.content {
+    width: 740px;
+    min-height: 480px;
+    float: right;
+    background: #fff;
+    padding-left: 40px;
+}
+
+.content .hd {
+    padding-bottom: 18px;
+    margin: 0 0 20px 0;
+    *position: relative;
+    border-bottom: 1px solid #eee;
+}
+.content .hd strong {
+    font-size: 24px;
+    color: #444;
+    font-weight: normal;
+}
+.content dl {
+    clear: both;
+    padding-bottom: 15px;
+}
+.content dt {
+    width: 85px;
+    float: left;
+    padding: 6px 10px 0 0;
+    text-align: right;
+    color: #a1a1a1;
+    font-size: 16px;
+}
+.content dd {
+    width: 490px;
+    float: left;
+}
+.content dd input[type="text"], .content dd input[type="password"] {
+    width: 208px;
+    border: 1px solid #d3d3d3;
+    height: 32px;
+    padding: 6px 8px;
+    line-height: 18px;
+    font-size: 14px;
+    color: #999;
+    outline: none;
+    transition: box-shadow 0.25s linear 0s;
+    border-radius: 3px;
+}
+.content dd label {
+    padding-right: 20px;
+    line-height: 32px;
+    float: left;
+    cursor: pointer;
+}
+.content dd label .cssradio {
+    float: left;
+    margin: 6px 6px 0 0;
+}
+.cssradio {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+}
+.cssradio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    top: 1px;
+    left: 1px;
+}
+.cssradio span::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+.cssradio input:checked + span::after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-color: #ffa800;
+}
+.cssradio span {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: #fff;
+    border: 1px solid #ffa800;
+}
+.content .input-group {
+    position: relative;
+}
+.userinfo dd textarea {
+    width: 472px;
+    height: 110px;
+    border: 1px solid #d3d3d3;
+    padding: 6px 8px;
+    line-height: 1.6em;
+    font-size: 14px;
+    color: #999;
+    outline: none;
+    transition: box-shadow 0.25s linear 0s;
+    border-radius: 3px;
+    resize: none;
+}
+
+textarea {
+    overflow: auto;
+}
+.userinfo .btn-sub {
+    padding: 10px 0;
+    width: 490px;
+    float: right;
+}
+.userinfo .btn-sub button {
+    width: 112px;
+    height: 36px;
+    display: block;
+    line-height: 36px;
+    background-color: #ffa800;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.userlogo .avatar {
+    width: 120px;
+    height: 120px;
+    padding: 30px 0 20px;
+    position: relative;
+}
+.userlogo .btn-sub .btn {
+    width: 120px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ffa800;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    vertical-align: middle;
+    margin-right: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+.userlogo .btn-sub {
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.userpass {
+    width: 560px;
+}
+.userpass dl {
+    clear: both;
+    width: 560px;
+    padding-bottom: 15px;
+}
+.userpass dt {
+    width: 75px;
+    float: left;
+    padding: 4px 10px 0 0;
+    text-align: right;
+    font-size: 14px;
+}
+.userpass dd {
+    width: 455px;
+    float: left;
+    line-height: 1.8em;
+    color: #666;
+}
+.userpass a {
+    font-size: 14px;
+    color: #ffa800;
+}
+.userpass #set-pw {
+    padding-top: 15px;
+    display: none;
+}
+.userpass dd .status {
+    font-size: 12px;
+    color: #999;
+}
+.userpass dd i {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    background: url(../images/i_btns4.png) -72px -1px no-repeat;
+    margin: 0 4px 0 15px;
+    vertical-align: middle;
+}
+
+
+.blacklist {
+    width: 584px;
+    margin-left: 20px;
+}
+.blacklist .bd {
+    background-color: #efefef;
+    padding: 20px;
+    margin: 0 -18px;
+}
+.blacklist .col-search {
+    width: 308px;
+    margin-right: 10px;
+}
+.blacklist dl {
+    float: left;
+    width: 258px;
+    height: 360px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    clear: none;
+    padding: 0;
+}
+.blacklist dt {
+    height: 30px;
+    float: none;
+    padding: 0;
+    margin: 9px 9px 0;
+    width: auto;
+    position: relative;
+}
+.blacklist .focus .inp-t {
+    border-color: #ff9d00;
+    background-color: #fff;
+}
+.blacklist .inp-t {
+    width: 238px;
+    height: 28px;
+    padding: 0 38px 0 12px;
+    border: 1px solid #efefef;
+    background-color: #efefef;
+    border-radius: 3px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #666;
+}
+.blacklist .focus .inp-b {
+    background-position: -60px -20px;
+}
+.blacklist .inp-b {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    width: 17px;
+    height: 16px;
+    background: url(../images/i_btns4.png) no-repeat -40px -20px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+.blacklist dd {
+    width: auto;
+    float: none;
+}
+.blacklist .search-list {
+    height: 260px;
+    overflow: auto;
+    position: relative;
+}
+.blacklist .search-list li {
+    height: 40px;
+    padding: 0 48px 0 20px;
+    position: relative;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.blacklist .search-list li.on {
+    background-color: #f8f8f8;
+}
+.blacklist .search-list li:hover {
+    background-color: #f8f8f8;
+}
+.blacklist li img {
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin: 12px 8px 0 0;
+    overflow: hidden;
+}
+.blacklist li .name {
+    float: left;
+    margin-right: 10px;
+    max-width: 120px;
+    overflow: hidden;
+}
+.blacklist .female {
+    background-position: -20px -20px;
+}
+.blacklist .lv {
+    font-size: 12px;
+    color: #999;
+}
+.blacklist .gender {
+    float: left;
+    margin: 11px 9px 0 0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/i_btns4.png) no-repeat 0 -20px;
+}
+.blacklist .search-list li.on .i-selected {
+    position: absolute;
+    top: 14px;
+    right: 20px;
+    width: 17px;
+    height: 12px;
+    background: url(../images/i_btns4.png) no-repeat -110px -20px;
+    overflow: hidden;
+}
+.blacklist .action {
+    margin-top: 10px;
+    text-align: center;
+}
+.blacklist .btn {
+    display: inline-block;
+    height: 30px;
+    padding: 0 25px;
+    line-height: 30px;
+    background-color: #ff9d00;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+}
+.blacklist .col-list ul {
+    height: 310px;
+    overflow: auto;
+    position: relative;
+}
+.blacklist .col-list li {
+    padding-right: 40px;
+    border-bottom: 1px solid #efefef;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.blacklist .btn-remove {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    width: 11px;
+    height: 11px;
+    background: url(../images/i_btns4.png) no-repeat -80px -20px;
+    cursor: pointer;
+}
+.blacklist .tips {
+    clear: both;
+    padding-top: 5px;
+    text-align: right;
+    font-size: 12px;
+    color: #ffa800;
+}
+
+.ap-head {
+    height: 70px;
+    border-bottom: 3px solid #e5e5e5;
+    margin-top: 20px;
+}
+.ap-head h1 {
+    width: 178px;
+    float: left;
+    font-size: 18px;
+    line-height: 70px;
+    font-weight: normal;
+    padding-left: 3px;
+}
+.ap-wrap {
+    clear: both;
+    padding: 26px 0 50px;
+}
+.ap-wrap .title {
+    height: 40px;
+    border: none;
+}
+.ap-wrap .title, .ap-wrap .body, .ap-wrap .music, .ap-wrap .sel_category {
+    margin-bottom: 10px;
+}
+.ap-wrap .title label, .ap-wrap .title dd span.style_tags {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    *top: 2px;
+    *left: 2px;
+    width: 653px;
+    *width: 651px;
+    padding-left: 10px;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+    color: #ccc;
+    font-size: 14px;
+    z-index: 10;
+}
+.ap-wrap .title .char-limit {
+    position: absolute;
+    top: 1px;
+    right: 40px;
+    padding: 0 10px;
+    line-height: 38px;
+    color: #999;
+    font-size: 12px;
+}
+.ap-wrap .title .char-limit strong {
+    color: #f00;
+    font-weight: normal;
+}
+.ap-wrap .title dd input {
+    height: 38px;
+    width: 578px;
+    top: 0;
+    left: 0;
+    padding: 0 80px 0 5px;
+    border: 1px solid #efeeee;
+    line-height: 38px;
+    font-size: 16px;
+    color: #666;
+    position: absolute;
+    z-index: 20;
+    background: transparent url(../images/blank.jpg) repeat;
+}
+.ap-wrap .body {
+    width: 665px;
+}
+#content_div {
+    position: relative;
+}
+.ap-wrap .btns {
+    padding: 10px 0 30px 0;
+}
+.ap-wrap .btns .btn_submit {
+    background-color: #ffa800;
+    color: #fff;
+}
+.ap-wrap .btns .cont {
+    float: left;
+    line-height: 36px;
+    color: #666;
+    font-size: 14px;
+}
+.ap-wrap .btns .btn_save {
+    background-color: #fff;
+    color: #ffa800;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 8px 3px;
+}
+.ap-wrap .btns input {
+    float: left;
+    margin: 0 10px 0 0;
+    border-radius: 3px;
+    padding: 6px 20px;
+    *padding: 2px 0;
+    border: 0 none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.set_index {
+    height: 300px;
+    background: url(../images/page_bg.jpg) center 0 no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.set_page {
+    height: 67px;
+    padding: 120px 0 0 275px;
+    width: 705px;
+    margin: 0 auto;
+    position: relative;
+}
+.set_page a.set_add {
+    width: 67px;
+    height: 67px;
+    float: left;
+    margin-right: 20px;
+    background: url(../images/addpic.png) no-repeat;
+    position: relative;
+}
+.set_page h2, .set_page h2 a {
+    font-size: 24px;
+    color: #333;
+    font-weight: normal;
+}
+.set_page p {
+    margin-top: 12px;
+    font-size: 16px;
+}
+.crumb {
+    margin: 29px 0;
+}
+.crumb a:hover {
+    color: #ff8a00;
+    text-decoration: none;
+}
+.crumb strong {
+    font-weight: normal;
+}
+.q-create {
+    margin-top: 50px;
+}
+.q-create .item {
+    margin-bottom: 30px;
+    padding-right: 260px;
+}
+.q-create .content {
+    width: 665px;
+    float: none;
+    padding: 0;
+    min-height: 0;
+}
+.q-create h2 {
+    height: 24px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #444;
+}
+.q-create .item-title textarea {
+    margin: 0;
+    height: 40px;
+    width: 665px;
+    padding: 5px 15px;
+    border: 2px solid #fc3;
+    font-size: 14px;
+    line-height: 26px;
+    resize: none;
+    overflow: auto;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.txt-gray {
+    color: #999;
+}
+.q-create .item-title .side-tips {
+    margin-top: 12px;
+}
+.q-create .side-tips p {
+    padding: 14px;
+    line-height: 20px;
+}
+.q-create .side-tips {
+    margin-top: 15px;
+    background-color: #fff6df;
+    border-radius: 4px;
+    *zoom: 1;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+    color: #836b4c;
+}
+.q-create .err-tips {
+    margin: 10px 0;
+    padding: 0 0 3px 22px;
+    background: url(../images/err_ico.png) no-repeat;
+    font-size: 12px;
+    color: #FF3C00;
+}
+.area textarea{
+	width: 665px;
+}
+.q-create .hd {
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 0;
+    border: none;
+}
+.q-create .item-location textarea {
+    margin: 0;
+    height: 36px;
+    width: 150px;
+    padding: 5px 15px;
+    border: 1px solid #d3d3d3;
+    background-color: #fff;
+    line-height: 22px;
+    font-size: 14px;
+    resize: none;
+    overflow: auto;
+}
+.ui-sel {
+    width: 150px;
+    margin-right: 8px;
+    font-size: 12px;
+}
+.q-create .ui-sel {
+    display: inline-block;
+}
+.sel-hd i {
+    float: right;
+    width: 17px;
+    height: 20px;
+    border-left: 1px solid #ddd;
+    overflow: hidden;
+}
+.q-create .item .ui-sel .err-input {
+    padding: 3px 4px;
+}
+
+.q-create .item .err-input {
+    padding: 6px 15px;
+    border: 1px solid #d3d3d3;
+}
+.sel-hd {
+    height: 20px;
+    border: 1px solid #d3d3d3;
+    padding: 3px 4px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.sel-hd i b {
+    width: 0;
+    height: 0;
+    border-top: 5px solid #fc3;
+    border-left: 5px dotted transparent;
+    border-right: 5px dotted transparent;
+    font-size: 0;
+    overflow: hidden;
+    position: absolute;
+    margin: 8px 0 0 5px;
+}
+.sel-hd span {
+    display: block;
+    padding: 0 6px;
+}
+ul.sel-bd {
+    height: 160px;
+    overflow-y: auto;
+}
+.sel-bd {
+    position: absolute;
+    z-index: 5;
+    margin-top: -1px;
+    border: 1px solid #d3d3d3;
+    width: 148px;
+    background-color: #fff;
+    line-height: 22px;
+}
+.sel-bd li {
+    padding: 0 10px;
+    cursor: pointer;
+}
+.flt1 {
+    float: left;
+}
+.q-create .item.focus textarea, .q-create .item-detail textarea:focus {
+    border: 2px solid #fc3;
+    background-color: #fff;
+}
+.add-tag {
+    float: left;
+    margin: 0;
+    height: 22px;
+    width: 95px;
+    margin: 0;
+    padding: 0 5px;
+    border: 1px solid #d3d3d3;
+    background-color: #f9f9f9;
+    line-height: 20px;
+    font-size: 12px;
+}
+.q-create .item-tag .bd {
+    overflow: hidden;
+    _overflow: auto;
+    _clear: both;
+}
+.q-create .item-action {
+    margin: 50px 0;
+}
+.q-create .item-action a {
+    display: inline-block;
+    width: 140px;
+    height: 36px;
+    background-color: #ffa800;
+    border-bottom: 2px solid #ff8a00;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    line-height: 36px;
+    text-align: center;
+    overflow: hidden;
+}
+.a-tag {
+    display: inline-block;
+    margin: 3px 5px 0 0;
+    line-height: 20px !important;
+    padding: 0 15px;
+    background-color: #f6f6f6;
+    border: 1px solid #e5e5e5;
+    border-radius: 11px;
+    color: #666;
+    font-size: 12px !important;
+    white-space: nowrap;
+}
+.q-create .a-tag {
+    float: left;
+    margin: 2px 5px 2px 0;
+}
+.a-tag em {
+    font-style: normal;
+}
+.a-tag:hover {
+    background-color: #ff9d00;
+    border: 1px solid #ff9d00;
+    color: #fff;
+    text-decoration: none;
+}
+.a-tag i {
+    margin: 0 0 0 7px;
+    font-style: normal;
+    color: #ffa800;
+    cursor: pointer;
+}
