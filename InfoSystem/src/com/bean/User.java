@@ -68,6 +68,11 @@ public class User {
 		return u;
 	}
 	
+	public static User login(User user) throws Exception{
+		User u=UserBPO.loginCheck(user.getId(),user.getPassword());
+		return u;
+	}
+	
 	public static User reset(String user,String id) throws Exception {
 		User u=UserBPO.resetCheck(user, id);
 		return u;

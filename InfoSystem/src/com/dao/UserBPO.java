@@ -22,7 +22,7 @@ public class UserBPO {
 		DataStore ds=sql.executeQuery();
 		
 		if(ds.rowCount()==0){
-			throw new Exception("用户名不存在");
+			throw new Exception("学号不存在,请检查");
 		}
 		String password=ds.getString(0, "password");
 		if(!pwd.equals(password))

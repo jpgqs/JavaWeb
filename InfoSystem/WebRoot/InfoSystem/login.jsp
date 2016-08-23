@@ -2,33 +2,7 @@
 <%@ page import="com.bean.User" %>
 <%@ page import="java.lang.Exception" %>
 <%
-	String[] tips={"",""};
-	String action=request.getParameter("action");
-	String username="";
-	String password="";
-	if(action!=null&&action.equals("login")){
-		username=request.getParameter("username");
-		password=request.getParameter("password");
-		User u=null;
-		try{
-			u=User.login(username, password);
-		}catch(Exception e){
-			if(e.getMessage().contains("用户名")){
-				tips[0]="*用户名不存在";
-			}else if(e.getMessage().contains("密码")){
-				tips[1]="*密码错误";
-			}else{
-				out.println("<script type=\"text/javascript\">");
-				out.println("alert('"+e.getMessage()+"');");
-				out.println("</script>");
-			}
-		}
-		if(u!=null){
-			session.setAttribute("user", u);
-			session.setMaxInactiveInterval(1800);
-			response.sendRedirect("personalpage.jsp");
-		}
-	}
+	
  %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
@@ -41,7 +15,14 @@
 			menufocus();
 			
 			onfocus();
+			
+			var error='${error }';
+			
+			if(error.length!=0){
+				alert(error);
+			}
 		}
+		
 	</script>
 
   </head>
@@ -80,21 +61,18 @@
 
 	<div class="wrap">
 		<div class="loginbox">
-			<form action="" method="post" onsubmit="return logincheck();">
-				<input type="hidden" name="action" value="login"/>
+			<form action="login" method="post" onsubmit="return logincheck();">
 				<div class="crm">
 					<input type="text" placeholder="学号" name="username" id="username" >
 					<script type="text/javascript">
-						document.getElementById("username").value=<%=username %>
+						document.getElementById("username").value=${username }
 					</script>
-					<p><%=tips[0] %></p>
 				</div>
 				<div class="crm">
 					<input type="password" placeholder="初始密码身份证后六位" name="password" id="password">
 					<script type="text/javascript">
-						document.getElementById("password").value=<%=password %>
+						document.getElementById("password").value=${password }
 					</script>
-					<p><%=tips[1] %></p>
 				</div>
 				<div class="crm">
 					<input id="loginbutton" type="submit" value="立即登录">

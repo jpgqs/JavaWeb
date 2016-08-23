@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- 动态调用方法(!)需要添加该常量 -->
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" /> 
+	<!--  
+	<package name="helloWorld" extends="struts-default">
+		 //通配符调用多个方法 
+		<action name="hello*" class="com.action.HelloWorld" method="{1}">
+			<result name="success">helloWorld.jsp</result>
+		</action>
+	
+		//动态调用多个方法 
+		<action name="hello" class="com.action.HelloWorld">
+			<result name="success">helloWorld.jsp</result>
+		</action>
+	</package>
+	-->
+	<package name="login" extends="struts-default">
+		<action name="login" class="com.action.LoginAction">
+			<result name="success">personalpage.jsp</result>
+			<result name="error">login.jsp</result>
+		</action>
+		<action name="login_*" class="com.action.LoginAction" method="{1}">
+			<result name="success">resetpwd.jsp</result>
+		</action>
+	</package>
+
+</struts>
